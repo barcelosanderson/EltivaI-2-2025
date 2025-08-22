@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Somando com o Anderson</title>
+<title>Multiplicando com o Anderson</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 
 </head>
@@ -11,7 +11,7 @@
 <body style="background: linear-gradient(135deg, #ff6600, #ff9933, #ffd280)">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+    <div class="container-fluid">
     <a class="navbar-brand" href="#">Lista 1 - Anderson Barcelos</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,9 +31,9 @@
   </div>
 </nav>
 
-<div class="d-flex justify-content-center">
-<div class="p-5 rounded shadow vh-100">
-<h1>Exercício 1 - Soma de Valores</h1>
+<div class="d-flex justify-content-center vh-100">
+<div class="p-5 rounded shadow">
+<h1>Exercício 3 - Multiplicação de Valores</h1>
 <form method="post">
 <div class="mb-3">
     <label for="valor1" class="form-label">Informe o primeiro valor</label>
@@ -54,8 +54,8 @@
         {
             $valor1 = $_POST["valor1"];
             $valor2 = $_POST["valor2"];
-            $soma = $valor1 + $valor2;
-            echo "<h1>Soma: $soma </h1>";
+            $multi = $valor1 * $valor2;
+            echo "<h1>Multiplicação: $multi </h1>";
             //- * --> multiplicação | ** --> potenciação | / --> divisão | % --> divisão sem resto
         }
     ?>
