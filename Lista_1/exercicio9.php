@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Convertendo com o Anderson</title>
+<title>Calculando área com o Anderson</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 <style>
 
@@ -27,10 +27,10 @@
     </div>
     <div class="p-5 d-flex justify-content-center vh-100">  
         <div class="p-5 rounded shadow" style="background: #0000009c">
-            <h1 style="color: white">Exercício 7 - Conversão °F para °C</h1>
+            <h1 style="color: white">Exercício 9 - Cálculo de área do círculo</h1>
             <form method="post">
                 <div class="mb-3">
-                    <label for="valor1" class="form-label" style="color:white ">Informe a temperatura em °F: </label>
+                    <label for="valor1" class="form-label" style="color:white ">Insira o raio: </label>
                     <input type="number" id="valor1" name="valor1" class="form-control" required="">
                 </div>
                  <div class="d-flex justify-content-center align-center">
@@ -44,8 +44,8 @@
                 if ($_SERVER['REQUEST_METHOD'] == 'POST')
                 {
                     $valor1 = $_POST["valor1"];
-                    $conversao = ($valor1 -32) * 5/9;
-                    echo "<h1>°F: $conversao </h1>";
+                    $areacirc = $valor1**2 * pi();
+                    echo "<h1 style=color:white>Área: $areacirc </h1>";
                     //- * --> multiplicação | ** --> potenciação | / --> divisão | % --> divisão sem resto
                 }
             ?>

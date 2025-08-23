@@ -13,7 +13,7 @@
 <?php include "navbar.php"; ?>
 
 <div class="d-flex justify-content-center vh-100">
-<div class="p-5 rounded shadow">
+<div class="rounded shadow">
 <h1>Exercício 5 - Média de Valores</h1>
 <form method="post">
 <div class="mb-3">

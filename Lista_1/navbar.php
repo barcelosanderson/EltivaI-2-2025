@@ -1,7 +1,7 @@
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark p-1">
     <a class="navbar-brand" href="#">Lista 1 - Anderson Barcelos</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -17,8 +17,12 @@
             <li><a class="dropdown-item" href="exercicio5.php">Exercício 5</a></li>
             <li><a class="dropdown-item" href="exercicio6.php">Exercício 6</a></li>
             <li><a class="dropdown-item" href="exercicio7.php">Exercício 7</a></li>
+            <li><a class="dropdown-item" href="exercicio8.php">Exercício 8</a></li>
+            <li><a class="dropdown-item" href="exercicio9.php">Exercício 9</a></li>
+            <li><a class="dropdown-item" href="exercicio10.php">Exercício 10</a></li>
+            <li><a class="dropdown-item" href="exercicio11.php">Exercício 11</a></li>
           </ul>
-</ul>
+    </ul>
     </div>
   </div>
   </nav>
