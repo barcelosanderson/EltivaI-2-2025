@@ -1,6 +1,6 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark p-1">
-    <a class="navbar-brand" href="#">Lista 1 - Anderson Barcelos</a>
+    <a class="navbar-brand ms-2" href="#">Lista 1 - Anderson Barcelos</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado">
     <span class="navbar-toggler-icon"></span>
   </button>
