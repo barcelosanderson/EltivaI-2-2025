@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multiplicando com o Anderson</title>
+    <title>Calculando velocidade média com o Anderson</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,15 +19,15 @@
     </div>
     <div class="p-5 d-flex flex-column align-items-center vh-100">
         <div class="caixa">
-            <h1 style="color:white">Exercício 3 - Multiplicação de Valores</h1>
+            <h1 style="color:white">Exercício 20 - Velocidade Média</h1>
             <form method="post">
                 <div class="mb-3">
-                    <label for="valor1" class="form-label" style="color:white">Informe o primeiro valor</label>
+                    <label for="valor1" class="form-label" style="color:white">Informe a distância (km)</label>
                     <input type="number" id="valor1" name="valor1" class="form-control" required="">
                 </div>
                 <div class="mb-3">
-                    <label for="valor2" class="form-label" style="color:white">Informe o segundo valor</label>
-                    <input type="number" id="valor2" name="valor2" class="form-control" required="">
+                    <label for="valor2" class="form-label" style="color:white">Informe o tempo (h)</label>
+                    <input type="number" step="0.01" id="valor2" name="valor2" class="form-control" required="">
                 </div>
                 <div class="d-flex justify-content-center align-center">
                     <button type="submit" class="btn btn-dark">Enviar</button>
@@ -39,11 +39,12 @@
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $valor1 = $_POST["valor1"];
                     $valor2 = $_POST["valor2"];
-                    $multi = $valor1 * $valor2;
-                    echo "<h1>Multiplicação: $multi </h1>";
+                    $velo_media = $valor1 / $valor2;
+                    echo "<h1>Velocidade Média: $velo_media km/h</h1>";
                     //- * --> multiplicação | ** --> potenciação | / --> divisão | % --> divisão sem resto
                 }
                 ?>
+
             </div>
         </div>
     </div>
@@ -51,4 +52,5 @@
     <?php include "rodape.php"; ?>
 
 </body>
+
 </html>
