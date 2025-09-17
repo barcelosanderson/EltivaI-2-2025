@@ -16,7 +16,7 @@
             <source src="noite.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="p-5 d-flex flex-column align-items-center vh-100">
+    <div class="p-5">
         <div class="caixa">
             <h1 style="color:white">Exercício 4</h1>
             <div class="m-5 flex-column align-items-center">
@@ -33,7 +33,7 @@
                     <?php
                     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $valor1 = $_POST["valor1"];
-                       
+
 
                         if ($valor1 > 100) {
                             $desconto = $valor1 * 0.15;
@@ -51,10 +51,8 @@
                 </div>
             </div>
         </div>
-
-        <?php include "rodape.php"; ?>
-
     </div>
 </body>
+<?php include "rodape.php"; ?>
 
 </html>

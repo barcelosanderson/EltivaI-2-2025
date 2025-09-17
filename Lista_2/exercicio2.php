@@ -16,7 +16,7 @@
             <source src="noite.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="p-5 d-flex flex-column align-items-center vh-100">
+    <div class="p-5">
         <div class="caixa">
             <h1 style="color:white">Exercício 2</h1>
             <div class="m-5 flex-column align-items-center">
@@ -52,9 +52,9 @@
                 </div>
             </div>
         </div>
-
-        <?php include "rodape.php"; ?>
     </div>
 </body>
+
+<?php include "rodape.php"; ?>
 
 </html>
