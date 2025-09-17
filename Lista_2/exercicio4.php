@@ -37,8 +37,11 @@
 
                         if ($valor1 > 100) {
                             $desconto = $valor1 * 0.15;
+                            $valornovo = $valor1 - $desconto;
+                            $formatanovo = number_format($valornovo, 2, ',', '.');
                             $formatado = number_format($desconto, 2, ',', '.');
                             echo "<p>Desconto: R$$formatado</p>";
+                            echo "<p>Valor com desconto: R$$formatanovo</p>";
                         } else {
                             echo "<p>Não houve desconto.</p>";
                         }
