@@ -23,11 +23,11 @@
                 <form method="post">
                     <?php for ($i = 1; $i <= 5; $i++): ?>
                         <div class="mb-3">
-                            <label for="nome<?= $i ?>" class="form-label" style="color:white">Nome do Contato <?= $i ?>:</label>
+                            <label for="nome<?= $i ?>" class="form-label" style="color:white">Nome do Contato: <?= $i ?>:</label>
                             <input type="text" id="nome<?= $i ?>" name="nomes[]" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="telefone<?= $i ?>" class="form-label" style="color:white">Telefone do Contato <?= $i ?>:</label>
+                            <label for="telefone<?= $i ?>" class="form-label" style="color:white">Telefone do Contato: <?= $i ?>:</label>
                             <input type="text" id="telefone<?= $i ?>" name="telefones[]" class="form-control" required>
                         </div>
                         <hr style="border-color: white;">
