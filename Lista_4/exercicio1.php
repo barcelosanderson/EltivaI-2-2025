@@ -46,31 +46,25 @@
                         $contatos = [];
                         $erros = [];
 
-                        // Processar os 5 contatos
                         for ($i = 0; $i < 5; $i++) {
                             $nome = trim($nomes[$i]);
                             $telefone = trim($telefones[$i]);
 
-                            // Verificar se nome já existe
                             if (array_key_exists($nome, $contatos)) {
                                 $erros[] = "Nome '$nome' já existe! Contato não adicionado.";
                                 continue;
                             }
 
-                            // Verificar se telefone já existe
                             if (in_array($telefone, $contatos)) {
                                 $erros[] = "Telefone '$telefone' já existe! Contato não adicionado.";
                                 continue;
                             }
 
-                            // Adicionar ao array de contatos
                             $contatos[$nome] = $telefone;
                         }
 
-                        // Ordenar por nome
                         ksort($contatos);
 
-                        // Exibir erros se houver
                         if (!empty($erros)) {
                             echo "<div class='alert alert-danger w-100'>";
                             echo "<h5>Erros encontrados:</h5>";
@@ -80,7 +74,6 @@
                             echo "</div>";
                         }
 
-                        // Exibir contatos cadastrados
                         if (!empty($contatos)) {
                             echo "<h4 class='text-center' style='color:white'>Contatos Cadastrados (Ordenados por Nome):</h4>";
                             echo "<table class='table table-dark table-striped w-100' style='color:white'>";
