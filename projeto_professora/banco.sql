@@ -20,6 +20,7 @@ USE `projetophp` ;
 CREATE TABLE IF NOT EXISTS `projetophp`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL,
+  `nome` VARCHAR(255) NOT NULL,
   `senha` TEXT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -44,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `projetophp`.`produto` (
   `valor` DECIMAL(8,2) NOT NULL,
   `categoria_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_produto_categoria_idx` (`categoria_id` ASC) VISIBLE,
+  INDEX `fk_produto_categoria_idx` (`categoria_id` ASC),
   CONSTRAINT `fk_produto_categoria`
     FOREIGN KEY (`categoria_id`)
     REFERENCES `projetophp`.`categoria` (`id`)
